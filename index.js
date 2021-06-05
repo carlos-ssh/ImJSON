@@ -7,7 +7,8 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-	const superHeroes = request.response;
+	const superHeroesText = request.response;
+  	const superHeroes = JSON.parse(superHeroesText);
   	populateHeader(superHeroes);
   	showHeroes(superHeroes);
 }
