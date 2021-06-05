@@ -1,0 +1,2 @@
+# ImJSON
+To get the JSON we will use an API called XMLHttpRequest (often called XHR).  This is a very useful JavaScript object that allows you to make network requests to retrieve resources from a server via JavaScript (for example: images, text, JSON, even HTML code), so it is possible to update small sections of content without having to return to load the entire page.  This results in more interactive web pages, but it is beyond the scope of this article to go into detail.
