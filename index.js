@@ -2,13 +2,11 @@ const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/sup
 const request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
-
 request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-	const superHeroesText = request.response;
-  	const superHeroes = JSON.parse(superHeroesText);
+	const superHeroes = request.response;
   	populateHeader(superHeroes);
   	showHeroes(superHeroes);
 }
